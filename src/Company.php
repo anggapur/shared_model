@@ -23,6 +23,6 @@ class Company extends Model
 
     public function admin_users()
     {
-        return $this->hasMany('App\AdminUsers','company_id');
+        return $this->hasMany('Poska\AdminUsers','company_id');
     }
 }

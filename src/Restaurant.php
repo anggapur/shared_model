@@ -27,12 +27,12 @@ class Restaurant extends Model
 
     public function sessions()
     {
-        return $this->belongsToMany('App\Session', 'mtm_restaurant_session', 'restaurant_id', 'session_id');
+        return $this->belongsToMany('Poska\Session', 'mtm_restaurant_session', 'restaurant_id', 'session_id');
     }
 
     public function payment_methods()
     {
-        return $this->belongsToMany('App\PaymentMethod', 'mtm_restaurant_payment_method', 'restaurant_id', 'payment_method_id');
+        return $this->belongsToMany('Poska\PaymentMethod', 'mtm_restaurant_payment_method', 'restaurant_id', 'payment_method_id');
     }
 
 

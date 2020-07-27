@@ -24,11 +24,11 @@ class ModifierGroup extends Model
 
     public function modifier_items()
     {
-        return $this->belongsToMany('App\ModifierItem', 'mtm_modifier_group_modifier_item', 'modifier_group_id', 'modifier_item_id');
+        return $this->belongsToMany('Poska\ModifierItem', 'mtm_modifier_group_modifier_item', 'modifier_group_id', 'modifier_item_id');
     }
 
     public function mtm_modifier_items() {
-        return $this->hasMany('App\MTMModiferGroupModifierItem','modifier_group_id');
+        return $this->hasMany('Poska\MTMModiferGroupModifierItem','modifier_group_id');
         
     }
 }

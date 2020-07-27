@@ -29,7 +29,7 @@ class MTMTaxGroupTax extends Model
     }
 
     public function tax() {
-        return $this->belongsTo('App\Tax','tax_id');
+        return $this->belongsTo('Poska\Tax','tax_id');
     }
 
 

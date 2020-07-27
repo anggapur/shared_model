@@ -19,11 +19,11 @@ class AdminUsers extends Model
     ];
 
     public function company() {
-        return $this->belongsTo('App\Company','company_id');
+        return $this->belongsTo('Poska\Company','company_id');
     }
 
     public function admin_role_users() {
-        return $this->hasMany('App\AdminRoleUsers','user_id','id');
+        return $this->hasMany('Poska\AdminRoleUsers','user_id','id');
     }
 
     protected static function boot() {

@@ -29,7 +29,7 @@ class Area extends Model
 
     public function upper_area()
     {
-        return $this->belongsTo('App\Area','area_id');
+        return $this->belongsTo('Poska\Area','area_id');
     }
 
     public function getUpperAreaAllAttribute()

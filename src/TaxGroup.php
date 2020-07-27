@@ -21,7 +21,7 @@ class TaxGroup extends Model
     ];
 
     public function tax_group_item() {
-        return $this->hasMany('App\MTMTaxGroupTax','tax_group_id');
+        return $this->hasMany('Poska\MTMTaxGroupTax','tax_group_id');
     }
     
 }

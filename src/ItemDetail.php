@@ -26,7 +26,7 @@ class ItemDetail extends Model
     }
 
     public function child_item() {
-        return $this->belongsTo('App\Item','child_item_id');
+        return $this->belongsTo('Poska\Item','child_item_id');
     }
 
 }

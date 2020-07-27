@@ -30,7 +30,7 @@ class MTMModiferGroupModifierItem extends Model
     }
 
     public function modifier_item() {
-        return $this->belongsTo('App\ModifierItem','modifier_item_id');
+        return $this->belongsTo('Poska\ModifierItem','modifier_item_id');
     }
 
 }

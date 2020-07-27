@@ -23,19 +23,19 @@ class Item extends Model
     ];
 
     public function category() {
-        return $this->belongsTo('App\Category','category_id');
+        return $this->belongsTo('Poska\Category','category_id');
     }
 
     public function item_detail() {
-        return $this->hasMany('App\ItemDetail','parent_item_id');
+        return $this->hasMany('Poska\ItemDetail','parent_item_id');
     }
 
     public function modifier_groups()
     {
-        return $this->belongsToMany('App\ModifierGroup', 'mtm_item_modifier_group', 'item_id', 'modifier_group_id');
+        return $this->belongsToMany('Poska\ModifierGroup', 'mtm_item_modifier_group', 'item_id', 'modifier_group_id');
     }
 
     public function sales_type_item() {
-        return $this->hasMany('App\MTMSalesTypeItem','item_id');
+        return $this->hasMany('Poska\MTMSalesTypeItem','item_id');
     }
 }
