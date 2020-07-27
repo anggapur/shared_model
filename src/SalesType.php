@@ -12,6 +12,7 @@ class SalesType extends Model
     protected $table = "master_sales_type";
     protected $fillable = [
         "sales_type_name",
+        "sales_type_color",
         "company_id",
         "area_id",
         "restaurant_id",
