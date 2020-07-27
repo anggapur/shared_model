@@ -14,6 +14,8 @@ class AdminUsers extends Model
         "avatar",
         "remember_token",
         "company_id",
+        "area_id",
+        "restaurant_id",
         "created_at",
         "updated_at"
     ];
