@@ -1,0 +1,13 @@
+{
+    "name": "poska/model",
+    "description": "Shared model for all Poska aplications",
+    "type": "library",
+    "license": "private",
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Poska\\": "src/"
+        }
+    }
+}
