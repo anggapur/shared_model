@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace Poska;
 
 use Illuminate\Database\Eloquent\Model;
 

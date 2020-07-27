@@ -1,11 +1,11 @@
 <?php
 
-namespace App;
+namespace Poska;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-use App\Area;
+use Poska\Area;
 use GlobalHelper as GH;
 
 class Area extends Model
