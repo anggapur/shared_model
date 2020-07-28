@@ -16,6 +16,8 @@ class Company extends Model
         "address",
         "city",
         "is_active",
+        "max_area",
+        "max_restaurant",
         "created_at",
         "updated_at",
         "deleted_at"
