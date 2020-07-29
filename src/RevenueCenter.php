@@ -24,4 +24,9 @@ class RevenueCenter extends Model
     {
         return $this->belongsToMany('Poska\Employee', 'mtm_revenue_center_employee', 'revenue_center_id', 'employee_id');
     }
+
+    public function items()
+    {
+        return $this->belongsToMany('Poska\Item', 'mtm_revenue_center_item', 'revenue_center_id', 'item_id');
+    }
 }
