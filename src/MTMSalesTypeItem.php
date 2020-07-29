@@ -15,6 +15,8 @@ class MTMSalesTypeItem extends Model
         "item_id",
         "price",
         "is_active",
+        "tax_group_id",
+        "discount_id",
         "created_at",
         "updated_at",
         "deleted_at"
