@@ -9,7 +9,7 @@ class MTMRestaurantPaymentMethod extends Model
 {
     use SoftDeletes;
 
-    protected $table = "mtm_restaurant_session";
+    protected $table = "mtm_restaurant_payment_method";
     protected $fillable = [
         "restaurant_id",
         "session_id",
