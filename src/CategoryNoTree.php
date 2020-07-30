@@ -22,12 +22,4 @@ class CategoryNoTree extends Model
         "deleted_at"
     ];
 
-    public function __construct(array $attributes = [])
-    {
-        parent::__construct($attributes);
-
-        $this->setParentColumn('category_id');
-        $this->setOrderColumn('order');
-        $this->setTitleColumn('category_name');
-    }
 }
