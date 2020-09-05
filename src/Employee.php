@@ -18,6 +18,7 @@ class Employee extends Model
         "company_id",
         "area_id",
         "restaurant_id",
+        "token",
         "created_at",
         "updated_at",
         "deleted_at"
