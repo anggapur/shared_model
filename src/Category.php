@@ -5,7 +5,7 @@ namespace Poska;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Encore\Admin\Traits\AdminBuilder;
-use Encore\Admin\Traits\ModelTreeNew;
+use App\ModelTreeNew;
 
 class Category extends Model
 {
