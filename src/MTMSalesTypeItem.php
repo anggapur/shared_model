@@ -21,4 +21,9 @@ class MTMSalesTypeItem extends Model
         "updated_at",
         "deleted_at"
     ];
+
+    public static function tax_group()
+    {        
+        return $this->belongsTo('Poska\TaxGroup','tax_group_id');
+    }
 }
