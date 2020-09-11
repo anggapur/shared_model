@@ -26,4 +26,8 @@ class MTMSalesTypeItem extends Model
     {        
         return $this->belongsTo('Poska\TaxGroup','tax_group_id');
     }
+    public function discount()
+    {        
+        return $this->belongsTo('Poska\Discount','discount_id');
+    }
 }
