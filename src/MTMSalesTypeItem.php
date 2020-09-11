@@ -22,7 +22,7 @@ class MTMSalesTypeItem extends Model
         "deleted_at"
     ];
 
-    public static function tax_group()
+    public function tax_group()
     {        
         return $this->belongsTo('Poska\TaxGroup','tax_group_id');
     }
