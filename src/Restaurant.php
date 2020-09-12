@@ -20,6 +20,7 @@ class Restaurant extends Model
         "company_id",
         "area_id",
         "rounding_id",
+        "sales_type_id",
         "created_at",
         "updated_at",
         "deleted_at"
@@ -35,5 +36,9 @@ class Restaurant extends Model
         return $this->belongsToMany('Poska\PaymentMethod', 'mtm_restaurant_payment_method', 'restaurant_id', 'payment_method_id');
     }
 
+    public function sales_type()
+    {
+        return $this->belongsToMany('Poska\SalesType','sales_type_id');
+    }
 
 }
