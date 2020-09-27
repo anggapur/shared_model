@@ -12,6 +12,7 @@ class TaxGroup extends Model
     protected $table = "master_tax_group";
     protected $fillable = [
         "tax_group_name",
+        "tax_type",
         "company_id",
         "area_id",
         "restaurant_id",
