@@ -11,8 +11,7 @@ class BillGeneration extends Model
 
     protected $table = "master_bill_generation";
     protected $fillable = [
-        "revenue_center_id",
-        "restaurant_id",
+        "revenue_center_id",        
         "latest_bill_number",        
         "latest_bill", 
         "created_at",
@@ -20,10 +19,7 @@ class BillGeneration extends Model
         "deleted_at"
     ];
 
-    public function restaurant()
-    {
-        return $this->belongsTo('Poska\Restaurant','restaurant_id');
-    }
+
 
     public function revenue_center()
     {
