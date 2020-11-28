@@ -9,6 +9,7 @@ class BillGeneration extends Model
 {
     use SoftDeletes;
 
+    protected $primaryKey = "revenue_center_id";
     protected $table = "master_bill_generation";
     protected $fillable = [
         "revenue_center_id",        
