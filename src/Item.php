@@ -12,6 +12,7 @@ class Item extends Model
     protected $table = "master_item";
     protected $fillable = [
         "item_name",
+        "item_image",
         "is_package",
         "category_id",
         "company_id",
