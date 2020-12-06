@@ -18,4 +18,9 @@ class RevenueCenterDevice extends Model
         "updated_at",
         "deleted_at"
     ];
+
+    public function revenue_center()
+    {
+        return $this->belongsTo('Poska\RevenueCenter','revenue_center_id');
+    }
 }
