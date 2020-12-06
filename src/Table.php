@@ -9,7 +9,7 @@ class Table extends Model
 {
     use SoftDeletes;
 
-    protected $table = "master_place";
+    protected $table = "master_table";
     protected $fillable = [
         "restaurant_id",
         "revenue_id",
