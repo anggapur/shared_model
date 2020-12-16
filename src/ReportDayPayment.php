@@ -28,4 +28,11 @@ class ReportDayPayment extends Model
         "updated_at",
         "deleted_at"
     ];
+
+    protected $casts = [
+        "payment_method_value" => "double",
+        "payment_method_value_void"  => "double",
+        "payment_method_value_refund"  => "double"
+    ];
+
 }

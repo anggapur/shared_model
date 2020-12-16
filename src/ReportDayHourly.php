@@ -26,4 +26,9 @@ class ReportDayHourly extends Model
         "updated_at",
         "deleted_at"
     ];
+
+    protected $casts = [
+        "qty" => "integer",
+        "total" => "double",
+    ];
 }

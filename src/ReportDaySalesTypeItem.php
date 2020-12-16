@@ -50,4 +50,29 @@ class ReportDaySalesTypeItem extends Model
         "updated_at",
         "deleted_at"
     ];
+
+    protected $casts = [
+        "item_price" => "double",
+        "item_qty" => "integer",
+        "item_total" => "double",
+        "item_discount" => "double",
+        "item_exclusive_tax" => "double",
+        "item_inclusive_tax" => "double",
+        "item_valid_qty" => "integer",
+        "item_valid" => "double",
+        "item_valid_discount" => "double",
+        "item_valid_inclusive_tax" => "double",
+        "item_valid_exclusive_tax" => "double",
+        "item_void_qty" => "integer",
+        "item_void" => "double",
+        "item_void_discount" => "double",
+        "item_void_inclusive_tax" => "double",
+        "item_void_exclusive_tax" => "double",
+        "item_refund_qty" => "integer",
+        "item_refund" => "double",
+        "item_refund_discount" => "double",
+        "item_refund_inclusive_tax" => "double",
+        "item_refund_exclusive_tax" => "double",
+    ];
+
 }

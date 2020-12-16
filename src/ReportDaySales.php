@@ -36,4 +36,21 @@ class ReportDaySales extends Model
         "updated_at",
         "deleted_at"
     ];
+
+    protected $casts = [
+        "subtotal" => "double",
+        "grand_total" => "double",
+        "discount_total" => "double",
+        "tax_total" => "double",
+        "rounding" => "double",
+        "tax_inclusive" => "double",
+        "tax_exclusive" => "double",
+        "void_item" => "double",
+        "void_item_count" => "integer",
+        "refund_item" => "double",
+        "refund_item_count" => "integer",
+        "transaction_count" => "integer",
+        "bill_count" => "integer",
+    ];
+
 }

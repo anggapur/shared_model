@@ -28,4 +28,10 @@ class ReportDaySalesType extends Model
         "updated_at",
         "deleted_at"
     ];
+
+    protected $casts = [
+        "sales_type_value" => "double",
+        "sales_type_value_void" => "double",
+        "sales_type_value_refund" => "double",
+    ];
 }

@@ -29,4 +29,10 @@ class ReportDayTaxes extends Model
         "updated_at",
         "deleted_at"
     ];
+
+    protected $casts = [
+        "tax_value" => "double",
+        "tax_value_void" => "double",
+        "tax_value_refund" => "double",
+    ];
 }
