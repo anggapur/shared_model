@@ -36,5 +36,8 @@ class ReportDaySalesType extends Model
         "sales_type_value" => "double",
         "sales_type_value_void" => "double",
         "sales_type_value_refund" => "double",
+        "sales_type_qty" => "integer",
+        "sales_type_qty_void" => "integer",
+        "sales_type_qty_refund" => "integer",
     ];
 }
