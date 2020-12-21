@@ -49,4 +49,24 @@ class Orders extends Model
         "tax_total" => "double",        
         "rounding" => "double",        
     ];
+
+    public function restaurant() {
+        return $this->belongsTo('Poska\Restaurant','rest_id');
+    }
+
+    public function revenue_center() {
+        return $this->belongsTo('Poska\RevenueCenter','revenue_id');
+    }
+
+    public function employee_open() {
+        return $this->belongsTo('Poska\Employee','open_employee_id');
+    }
+
+    public function employee_close() {
+        return $this->belongsTo('Poska\Employee','close_employee_id');
+    }
+
+    public function session() {
+        return $this->belongsTo('Poska\Session','session_id');
+    }
 }

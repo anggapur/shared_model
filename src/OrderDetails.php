@@ -44,4 +44,9 @@ class OrderDetails extends Model
     public function modifiers() {
         return $this->hasMany('Poska\OrderDetailModifiers','order_detail_id');
     }
+
+    public function items() {
+        return $this->hasMany('Poska\OrderDetails','item_parent_id');
+    }
+
 }
