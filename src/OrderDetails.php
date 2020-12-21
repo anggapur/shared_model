@@ -32,4 +32,12 @@ class OrderDetails extends Model
         "updated_at",
         "deleted_at"
     ];
+    protected $casts = [                                
+        "item_num" => "integer",
+        "item_price" => "double",
+        "discount" => "double",
+        "inclusive_tax" => "double",
+        "exclusive_tax" => "double",
+        "subtotal" => "double",
+    ];
 }

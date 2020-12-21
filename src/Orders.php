@@ -39,4 +39,14 @@ class Orders extends Model
         "updated_at",
         "deleted_at"
     ];
+
+    protected $casts = [                
+        "subtotal" => "double",        
+        "grand_total" => "double",        
+        "discount_total" => "double",        
+        "tax_inclusive" => "double",        
+        "tax_exclusive" => "double",        
+        "tax_total" => "double",        
+        "rounding" => "double",        
+    ];
 }

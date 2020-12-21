@@ -28,4 +28,16 @@ class OrderBills extends Model
         "updated_at",
         "deleted_at"
     ];
+
+    protected $casts = [                        
+        "subtotal" => "double",
+        "inclusive_tax" => "double",
+        "exclusive_tax" => "double",
+        "discount" => "double",
+        "total_payment" => "double",
+        "total_due" => "double",
+        "total_bill" => "double",
+        "change_value" => "double",
+        "refund" => "double",            
+    ];
 }

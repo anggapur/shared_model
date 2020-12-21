@@ -19,4 +19,7 @@ class Payments extends Model
         "updated_at",
         "deleted_at"
     ];
+    protected $casts = [                                        
+        "payment_value" => "double",
+    ];
 }

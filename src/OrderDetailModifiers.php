@@ -20,4 +20,8 @@ class OrderDetailModifiers extends Model
         "updated_at",
         "deleted_at"
     ];
+    protected $casts = [                                        
+        "price" => "double",
+    ];
+
 }

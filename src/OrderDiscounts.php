@@ -22,4 +22,8 @@ class OrderDiscounts extends Model
         "updated_at",
         "deleted_at"
     ];
+    protected $casts = [                                        
+        "discount_value" => "double",
+        "discount"=> "double",        
+    ];
 }
