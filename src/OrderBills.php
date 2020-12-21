@@ -40,4 +40,8 @@ class OrderBills extends Model
         "change_value" => "double",
         "refund" => "double",            
     ];
+
+    public function payments() {
+        return $this->hasMany('Poska\Payment','order_bill_id');
+    }
 }

@@ -40,4 +40,8 @@ class OrderDetails extends Model
         "exclusive_tax" => "double",
         "subtotal" => "double",
     ];
+
+    public function modifiers() {
+        return $this->hasMany('Poska\OrderDetailModifiers','order_detail_id');
+    }
 }
