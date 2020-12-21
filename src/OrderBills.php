@@ -5,6 +5,8 @@ namespace Poska;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
+use Poska\Payment;
+
 class OrderBills extends Model
 {
     use SoftDeletes;
