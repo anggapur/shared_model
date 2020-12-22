@@ -53,4 +53,8 @@ class ReportDaySales extends Model
         "bill_count" => "integer",
     ];
 
+    public function session() {
+        return $this->belongsTo('Poska\Session','session_id');
+    }
+    
 }
