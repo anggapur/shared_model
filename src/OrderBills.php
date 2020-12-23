@@ -46,4 +46,9 @@ class OrderBills extends Model
     public function payments() {
         return $this->hasMany('Poska\Payments','order_bill_id');
     }
+
+    public function orders()
+    {
+        return $this->belongsTo('Poska\Orders','order_id');
+    }
 }
