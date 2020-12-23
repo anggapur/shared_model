@@ -22,4 +22,14 @@ class Payments extends Model
     protected $casts = [                                        
         "payment_value" => "double",
     ];
+
+    public function order_bill() {
+        return $this->belongsTo('Poska\OrderBills','order_bill_id');
+    }
+
+    public function payment_method() {
+        return $this->belongsTo('Poska\PaymentMethod','payment_method_id');
+    }
+
+
 }
