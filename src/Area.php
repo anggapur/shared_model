@@ -4,6 +4,8 @@ namespace Poska;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use Encore\Admin\Traits\AdminBuilder;
+use App\ModelTreeNew;
 
 use Poska\Area;
 use GlobalHelper as GH;
@@ -11,6 +13,7 @@ use GlobalHelper as GH;
 class Area extends Model
 {
     use SoftDeletes;
+    use ModelTreeNew, AdminBuilder;
 
     protected $table = "master_area";
     protected $fillable = [
@@ -24,6 +27,16 @@ class Area extends Model
         "updated_at",
         "deleted_at"
     ];
+
+    public function __construct(array $attributes = [])
+    {
+        parent::__construct($attributes);
+
+        $this->setParentColumn('area_id');
+        $this->setOrderColumn('id');
+        $this->setTitleColumn('name');
+    }
+
 
     protected $appends = ['upper_area_all'];
 
