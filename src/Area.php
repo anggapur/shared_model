@@ -5,7 +5,7 @@ namespace Poska;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Encore\Admin\Traits\AdminBuilder;
-use App\ModelTreeNew;
+use App\ModelTreeArea;
 
 use Poska\Area;
 use GlobalHelper as GH;
@@ -13,7 +13,7 @@ use GlobalHelper as GH;
 class Area extends Model
 {
     use SoftDeletes;
-    use ModelTreeNew, AdminBuilder;
+    use ModelTreeArea, AdminBuilder;
 
     protected $table = "master_area";
     protected $fillable = [
