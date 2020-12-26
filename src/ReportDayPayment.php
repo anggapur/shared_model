@@ -17,6 +17,7 @@ class ReportDayPayment extends Model
         "session_id",
         "payment_method_id",
         "payment_method_name",
+        "payment_method_qty",
         "payment_method_value",
         "payment_method_value_void",
         "payment_method_value_refund",
